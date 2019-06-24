@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/maplineshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLineList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:text="选择路线"
+            android:textSize="18dp"
+            android:layout_margin="12dp" />
+
+        <Button
+            android:id="@+id/btnWriteNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:text="去写旅记"
+            android:textSize="18dp"
+            android:layout_margin="12dp"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMapShot"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="路线截图"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:alpha="0.9"
+        android:id="@+id/layoutMyLines">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:alpha="0.9">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="我的路线"
+                android:textSize="36dp"
+                android:layout_margin="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/btnCloseLeftMenu"
+                android:text="关闭"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvMyLines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+</FrameLayout>

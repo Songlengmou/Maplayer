@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="设置"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llBeforeDuomap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:gravity="center"
+            android:text="开始跺图"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llAfterDuoMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:gravity="center"
+            android:text="停止跺图"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLeftMenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/btnCloseLeftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="关闭" />
+
+        <com.duomap.maplayer.MyView.CircleImageView
+            android:id="@+id/ivHeadIcon_Main"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="24dp"
+            android:clickable="true"
+            android:src="@drawable/nonheadicon" />
+
+        <Button
+            android:id="@+id/btnMyLies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="我的路线"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnBlogList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="我的旅记"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnBlogPublishedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="发布的旅记"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnToSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_edittext_selector"
+            android:text="设置"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPhotoShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/lvLinePhoto"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"></ListView>
+
+</FrameLayout>

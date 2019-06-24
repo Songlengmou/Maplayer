@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.duomap.maplayer.DoorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:keepScreenOn="true">
+
+        <TextView
+            android:id="@+id/tvNotice_Door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="30dp"
+            android:textColor="#33b5e5"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEnter_Door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进入系统"
+            android:padding="6dp"
+            android:textColor="#33b5e5"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSet_Door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去设置"
+            android:padding="6dp"
+            android:textColor="#33b5e5"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

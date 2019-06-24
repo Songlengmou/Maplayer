@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_20180101"/>
+
+    <TextView
+        android:id="@+id/tvVersion_Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp" />
+
+    <Button
+        android:id="@+id/btnChkPermission_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_edittext_selector"
+        android:text="检查权限"/>
+
+    <Button
+        android:id="@+id/btnSetPermission_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_edittext_selector"
+        android:visibility="gone"
+        android:text="去设置权限"/>
+
+    <Button
+        android:id="@+id/btnChkVersion_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_edittext_selector"
+        android:text="检查版本更新"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#dddddd">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/black_overlay"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:text="发送" />
+
+
+            <EditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/btn_send"
+                android:textColor="#666666"
+                android:background="@drawable/bg_edittext_selector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/lvWriteNote"
+            android:layout_above="@id/rl_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="12dp"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:stackFromBottom="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:cacheColorHint="#0000"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvProgress_WriteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在上传"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:textColor="#666"
+        android:background="@drawable/bg_edittext_selector"
+        android:alpha="0.7"
+        />
+</FrameLayout>
