@@ -46,6 +46,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author admin
+ */
 public class MainActivity extends Activity
         implements View.OnClickListener {
     private MapView mMapView = null;
@@ -237,6 +240,7 @@ public class MainActivity extends Activity
      * 监听对话框里面的button点击事件
      */
     DialogInterface.OnClickListener listenerExit = new DialogInterface.OnClickListener() {
+        @Override
         public void onClick(DialogInterface dialogInterface, int i) {
             switch (i) {
                 case AlertDialog.BUTTON_POSITIVE:// "确认"按钮退出程序
